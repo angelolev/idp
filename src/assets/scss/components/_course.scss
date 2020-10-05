@@ -1,0 +1,264 @@
+.course {
+  &__banner {
+    background: $color-heading;
+    padding: 65px 15px 30px;
+    color: $color-white;
+
+    @include breakpoint($sm) {
+      padding: 80px 30px;
+    }
+
+    @include breakpoint($lg) {
+      padding: 105px 80px 50px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      line-height: 28px;
+
+      @include breakpoint($sm) {
+        font-size: 32px;
+        line-height: 32px;
+      }
+
+      @include breakpoint($md) {
+        font-size: 38px;
+        line-height: 42px;
+      }
+    }
+
+    h4 {
+      margin-top: 10px;
+    }
+
+    p {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    small {
+      margin-right: 10px;
+
+      @include breakpoint($md) {
+        font-size: 14px;
+      }
+    }
+
+    .banner__content {
+      display: flex;
+      flex-wrap: wrap;
+
+      @include breakpoint($sm) {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+    p {
+      @include breakpoint($md) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__description {
+    @include breakpoint($sm) {
+      width: 50%;
+    }
+
+    a {
+      display: block;
+      color: $color-white;
+      background-color: $color-primary;
+      margin-top: 20px;
+      font-weight: bold;
+      width: fit-content;
+      padding: 15px 50px;
+      text-decoration: none;
+      transition: all 300ms;
+
+      &:hover {
+        background-color: $color-primary-dark;
+      }
+    }
+
+    ul {
+      padding-left: 20px;
+
+      li {
+        font-weight: normal;
+      }
+    }
+
+    .icon {
+      color: $color-primary;
+    }
+  }
+
+  &__extras {
+    margin-top: 20px;
+    width: 100%;
+
+    @include breakpoint($md) {
+      margin-top: 0;
+      width: 25%;
+    }
+
+    .extras__content {
+      @include breakpoint($md) {
+        padding-left: 20px;
+      }
+
+      h2 {
+        margin-bottom: 15px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+    }
+
+    .extras__features {
+      padding: 20px;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+
+    .extras__instructor {
+      margin-bottom: 20px;
+
+      .instructor__image {
+        img {
+          max-width: 60px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .extras__requirements {
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    @include breakpoint($sm) {
+      width: 50%;
+    }
+
+    img {
+      max-width: 100%;
+
+      @include breakpoint($sm) {
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+      }
+
+      @include breakpoint($md) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__info {
+    background-color: #f7f7f7;
+    padding: 30px 15px;
+
+    // @media (prefers-color-scheme: dark) {
+    //   background-color: rgb(29, 31, 32);
+    // }
+
+    @include breakpoint($sm) {
+      padding: 30px;
+    }
+
+    @include breakpoint($md) {
+      padding: 50px 30px;
+    }
+
+    h2 {
+      @include breakpoint($sm) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+
+    // h3,
+    // p,
+    // li {
+    //   @media (prefers-color-scheme: dark) {
+    //     color: #f7f7f7;
+    //   }
+    // }
+  }
+
+  &__presentation {
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+
+      @include breakpoint($md) {
+        font-size: 18px;
+      }
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+
+      @include breakpoint($sm) {
+        padding: 0 0 0 20px;
+      }
+
+      li {
+        display: flex;
+        margin-bottom: 10px;
+
+        @include breakpoint($md) {
+          font-size: 18px;
+          max-width: 700px;
+        }
+
+        &:before {
+          content: "\e905";
+          font-family: "icomoon";
+          margin-right: 10px;
+          position: relative;
+          top: 3px;
+        }
+      }
+    }
+  }
+
+  &__sessions {
+    width: 100%;
+
+    @include breakpoint($md) {
+      width: 75%;
+    }
+
+    .sessions__list {
+      margin-top: 30px;
+
+      @include breakpoint($md) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+  }
+}

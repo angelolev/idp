@@ -1,0 +1,46 @@
+.courses-list {
+  margin: 0;
+  padding: 60px 30px 30px;
+
+  h2,
+  p {
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    @include breakpoint($sm) {
+      font-size: 18px;
+      max-width: 500px;
+      margin: 0 auto 50px;
+    }
+
+    @include breakpoint($lg) {
+      font-size: 22px;
+      max-width: 700px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+
+    @include breakpoint($sm) {
+      justify-content: space-evenly;
+    }
+
+    @include breakpoint($lg) {
+      margin: 50px 0;
+    }
+
+    p {
+      font-size: 16px;
+      text-align: left;
+    }
+  }
+}

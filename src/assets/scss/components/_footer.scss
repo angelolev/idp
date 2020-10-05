@@ -1,0 +1,53 @@
+.footer {
+  background-color: $color-primary;
+  padding: 30px 15px;
+
+  &__logo {
+    img {
+      max-width: 100%;
+      min-width: 150px;
+    }
+  }
+
+  &__menu {
+    ul {
+      list-style: none;
+
+      @include breakpoint($sm) {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      li {
+        @include breakpoint($sm) {
+          margin-right: 40px;
+        }
+
+        a {
+          font-size: 16px;
+          display: block;
+          color: $color-white;
+          margin-top: 20px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__social {
+    a {
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    .icon {
+      font-size: 32px;
+      color: $color-white;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+}
