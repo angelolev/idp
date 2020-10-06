@@ -1,0 +1,48 @@
+.join-us__form {
+  max-width: 400px;
+  margin-left: auto;
+
+  &-header {
+    background-color: $color-heading;
+    padding: 10px;
+
+    h2 {
+      color: $color-white;
+      text-align: center;
+    }
+  }
+
+  &-content {
+    background-color: #f2f2f2;
+    padding: 20px 30px;
+  }
+
+  &-item {
+    margin-bottom: 10px;
+
+    .form-input {
+      background-color: $color-white;
+      border: 0;
+      padding: 12px 15px;
+      font-size: 16px;
+      display: block;
+      width: 100%;
+    }
+
+    .form-button {
+      border: 0;
+      background-color: $color-primary;
+      color: $color-white;
+      cursor: pointer;
+      font-size: 18px;
+      display: block;
+      margin: 20px auto 0;
+      padding: 12px 30px;
+      transition: all 300ms;
+
+      &:hover {
+        background-color: $color-primary-dark;
+      }
+    }
+  }
+}

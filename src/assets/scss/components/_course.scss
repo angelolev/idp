@@ -1,8 +1,45 @@
 .course {
   &__banner {
-    background: $color-heading;
+    background-size: cover;
+    background-position: center;
     padding: 65px 15px 30px;
     color: $color-white;
+
+    &.ecommerce {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(83, 83, 84, 0.52%),
+          rgba(0, 0, 0, 0.71%)
+        ),
+        url("../../../components/commons/Courses/bg-ecommerce.jpg");
+    }
+
+    &.remoto {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(83, 83, 84, 0.52%),
+          rgba(0, 0, 0, 0.63%)
+        ),
+        url("../../../components/commons/Courses/bg-remoto.jpg");
+    }
+
+    &.docentes {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(83, 83, 84, 0.52%),
+          rgba(0, 0, 0, 0.63%)
+        ),
+        url("../../../components/commons/Courses/bg-docentes.jpg");
+    }
+
+    &.redes {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(83, 83, 84, 0.52%),
+          rgba(0, 0, 0, 0.63%)
+        ),
+        url("../../../components/commons/Courses/bg-redes.jpg");
+    }
 
     @include breakpoint($sm) {
       padding: 80px 30px;
@@ -25,16 +62,29 @@
         font-size: 38px;
         line-height: 42px;
       }
+
+      @include breakpoint($lg) {
+        font-size: 48px;
+        line-height: 52px;
+      }
     }
 
     h4 {
       margin-top: 10px;
+
+      @include breakpoint($lg) {
+        font-size: 22px;
+      }
     }
 
     p {
       color: #fff;
       font-size: 18px;
       margin-bottom: 20px;
+
+      @include breakpoint($lg) {
+        font-size: 22px;
+      }
     }
 
     small {
@@ -43,11 +93,16 @@
       @include breakpoint($md) {
         font-size: 14px;
       }
+
+      @include breakpoint($lg) {
+        font-size: 16px;
+      }
     }
 
     .banner__content {
       display: flex;
       flex-wrap: wrap;
+      flex-direction: column-reverse;
 
       @include breakpoint($sm) {
         justify-content: space-between;
@@ -74,8 +129,9 @@
       width: 50%;
     }
 
-    a {
-      display: block;
+    button {
+      display: none;
+      border: 0;
       color: $color-white;
       background-color: $color-primary;
       margin-top: 20px;
@@ -95,6 +151,10 @@
 
       li {
         font-weight: normal;
+
+        @include breakpoint($lg) {
+          font-size: 16px;
+        }
       }
     }
 
@@ -152,8 +212,11 @@
   }
 
   &__image {
+    margin-top: 30px;
+
     @include breakpoint($sm) {
       width: 50%;
+      margin-top: 0;
     }
 
     img {

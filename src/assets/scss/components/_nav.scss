@@ -94,8 +94,8 @@
 
       &:first-child {
         @include breakpoint($sm) {
-          border-right: 1px solid $color-white;
-          padding: 5px 30px 5px 0;
+          // border-right: 1px solid $color-white;
+          // padding: 5px 30px 5px 0;
         }
       }
 
@@ -145,5 +145,9 @@
         }
       }
     }
+  }
+
+  &__user {
+    display: none !important;
   }
 }

@@ -50,7 +50,7 @@ const Terms = () => {
             validación del pago.
           </p>
 
-          <h2>1.Licencia</h2>
+          <h2>Licencia</h2>
           <p>
             Innodesign a través de su sitio web concede una licencia para que
             los usuarios puedan unirse a las clases de los cursos que adquieran

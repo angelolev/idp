@@ -13,6 +13,26 @@ body {
   font-family: $font-primary;
 }
 
+button {
+  border: 0;
+  cursor: pointer;
+  font-family: $font-primary;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+form {
+  input {
+    font-family: $font-primary;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
 h2 {
   font-size: 22px;
   line-height: 28px;

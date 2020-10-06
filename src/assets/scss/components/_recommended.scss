@@ -25,6 +25,10 @@
       @include breakpoint($sm) {
         width: 100%;
       }
+
+      img {
+        margin-left: 0;
+      }
     }
 
     .course__title {

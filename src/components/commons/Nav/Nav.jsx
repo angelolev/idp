@@ -58,7 +58,7 @@ const Nav = () => {
                 <Link to={`/calendario`}>Calendario</Link>
               </li>
             </ul>
-            <ul>
+            <ul className="nav__user">
               <li className="logged-in">
                 <a onClick={logOut}>Salir</a>
               </li>

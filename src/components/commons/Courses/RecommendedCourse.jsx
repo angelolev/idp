@@ -5,7 +5,6 @@ const RecommendedCourse = (props) => {
   const { courseImage, courseName, students, link } = props;
   return (
     <Link to={link}>
-      Sobre nosotros
       <div className="recommended__course">
         <div className="course__image">
           <img src={courseImage} alt="" />
