@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const RecommendedCourse = (props) => {
   const { courseImage, courseName, students, link } = props;
   return (
-    <a href={link}>
+    <Link to={link}>
+      Sobre nosotros
       <div className="recommended__course">
         <div className="course__image">
           <img src={courseImage} alt="" />
@@ -15,7 +17,7 @@ const RecommendedCourse = (props) => {
           </p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 

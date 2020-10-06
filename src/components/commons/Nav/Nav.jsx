@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { auth } from "../../../services/firebase";
 import logo from "./logo-white.svg";
 import { getUserState } from "../../../utils/utils";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [scroll, setScroll] = useState(true);
@@ -40,9 +41,9 @@ const Nav = () => {
     <nav className={navClasses}>
       <div className="nav__content">
         <div className="nav__left">
-          <a href="/">
+          <Link to={`/`}>
             <img src={logo} alt="Innodesign" />
-          </a>
+          </Link>
         </div>
         <div className="nav__right">
           <div className="nav__icon" onClick={showMenu}>
@@ -51,10 +52,10 @@ const Nav = () => {
           <div className="nav__menu fadeIn" id="nav__menu">
             <ul>
               <li>
-                <a href="/#courses">Cursos</a>
+                <Link to={`/#courses`}>Cursos</Link>
               </li>
               <li>
-                <a href="/calendario">Calendario</a>
+                <Link to={`/calendario`}>Calendario</Link>
               </li>
             </ul>
             <ul>
@@ -63,13 +64,13 @@ const Nav = () => {
               </li>
               <>
                 <li className="logged-out">
-                  <a href="/sign-in">Ingresar</a>
+                  <Link to={`/sign-in`}>Ingresar</Link>
                 </li>
 
                 <li className="logged-out">
-                  <a className="btn" href="/sign-up">
+                  <Link className="btn" to={`/sign-up`}>
                     Regístrate gratis
-                  </a>
+                  </Link>
                 </li>
               </>
             </ul>

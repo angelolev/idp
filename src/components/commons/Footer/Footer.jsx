@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./logo-white.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => (
   <footer className="footer">
@@ -21,16 +22,16 @@ const Footer = () => (
         <div className="footer__menu">
           <ul>
             <li>
-              <a href="/sobre-nosotros">Sobre nosotros</a>
+              <Link to={`/sobre-nosotros`}>Sobre nosotros</Link>
             </li>
             <li>
               <a href="/#courses">Encuentra un curso</a>
             </li>
             <li>
-              <a href="/como-funciona">Cómo funciona</a>
+              <Link to={`/como-funciona`}>Cómo funciona</Link>
             </li>
             <li>
-              <a href="/terminos">Términos de uso</a>
+              <Link to={`/terminos`}>Términos de uso</Link>
             </li>
           </ul>
         </div>
