@@ -45,7 +45,7 @@ const Course = (props) => {
                 </small>
                 <h4>Horarios</h4>
                 <ul>
-                  <li>Lunes y Martes 08:00PM - 09:00PM</li>
+                  <li>Martes y Jueves 08:00PM - 09:00PM</li>
                   <li>Miercoles y Viernes 08:00PM - 09:00PM</li>
                 </ul>
                 <button onClick={toggleModal}>

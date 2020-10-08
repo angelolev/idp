@@ -60,9 +60,7 @@ const FormSignUp = () => {
               placeholder="Apellidos"
               className="form-input"
             />
-            {errors.lastname && (
-              <span>Ingresa una dirección de correo válida</span>
-            )}
+            {errors.lastname && <span>Ingresa tu apellido</span>}
           </div>
           <div className="join-us__form-item">
             <input
@@ -72,9 +70,7 @@ const FormSignUp = () => {
               placeholder="Celular"
               className="form-input"
             />
-            {errors.phone && (
-              <span>Ingresa una dirección de correo válida</span>
-            )}
+            {errors.phone && <span>Ingresa tu celular</span>}
           </div>
           <div className="join-us__form-item">
             <input

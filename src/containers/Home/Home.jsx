@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/commons/Header/Header";
 import Benefits from "../../components/commons/Benefits/Benefits";
 import Testimonials from "../../components/commons/Testimonials/Testimonials";
@@ -6,6 +6,10 @@ import CoursesList from "../../components/commons/Courses/CoursesList";
 import Banner from "../../components/commons/Banner/Banner";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <>
       <Header />

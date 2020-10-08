@@ -1,176 +1,172 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import moment from "moment";
 import "moment/locale/es";
 moment.locale("es");
 
 const Calendar = () => {
   function getTime(day) {
-    const date = new Date(`September ${day}, 2020 20:00:00 GMT-05:00`);
-    // const date = new Date(2020, 8, day, 20, 0, 0);
+    const date = new Date(`October ${day}, 2020 20:00:00 GMT-05:00`);
     return " " + moment(date).fromNow();
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   const currentMonth = [
     {
       day: 1,
-      name: "MAR",
-      category: "javascript",
-      description: "Variables",
-      time: "8:00pm GMT-5 ",
+      // name: "JUE",
+      // category: "ecommerce",
+      // description: "Sesión 1",
+      // time: "8:00pm GMT-5 ",
     },
     {
       day: 2,
-      name: "MIÉ",
-      category: "html",
-      description: "Intro a HTML",
-      time: "8:00pm GMT-5 ",
-    },
-    {
-      day: 3,
-      name: "JUE",
-      category: "javascript",
-      description: "Operadores",
-      time: "8:00pm GMT-5 ",
-    },
-    {
-      day: 4,
       name: "VIE",
-      category: "live",
-      description: "Primeros pasos con React js",
+      category: "html",
+      category: "ecommerce",
+      description: "Grupo 1 - Sesión 1",
+    },
+    {
+      day: 5,
+      // name: "LUN",
+      // category: "ecommerce",
+      // description: "Grupo 2 - Sesión 1",
+      // time: "8:00pm GMT-5 ",
+    },
+    {
+      day: 6,
+      name: "MAR",
+      category: "trabajo-remoto",
+      description: "Sesión 1",
       time: "8:00pm GMT-5 ",
     },
     {
       day: 7,
-      name: "LUN",
-      category: "html",
-      description: "Manejo de assets",
+      name: "MIE",
+      category: "ecommerce",
+      description: "Grupo 1 - Sesión 2",
       time: "8:00pm GMT-5 ",
     },
     {
       day: 8,
-      name: "MAR",
-      category: "javascript",
-      description: "Condicionales",
+      name: "JUE",
+      category: "trabajo-remoto",
+      description: "Sesión 2",
       time: "8:00pm GMT-5 ",
     },
     {
       day: 9,
-      name: "MIÉ",
-      category: "html",
-      description: "Creando nuestro proyecto",
-      time: "8:00pm GMT-5 ",
-    },
-    {
-      day: 10,
-      name: "JUE",
-      category: "javascript",
-      description: "Ciclos",
-      time: "8:00pm GMT-5 ",
-    },
-    {
-      day: 11,
       name: "VIE",
-      category: "live",
-      description: "Introducción a Accesibilidad Web",
+      category: "ecommerce",
+      description: "Grupo 1 - Sesión 3",
+      time: "8:00pm GMT-5 ",
+    },
+    {
+      day: 12,
+      // name: "LUN",
+      // category: "ecommerce",
+      // description: "Grupo 2 - Sesión 3",
+      // time: "8:00pm GMT-5 ",
+    },
+    {
+      day: 13,
+      name: "MAR",
+      category: "trabajo-remoto",
+      description: "Sesión 3",
       time: "8:00pm GMT-5 ",
     },
     {
       day: 14,
-      name: "LUN",
-      category: "css",
-      description: "Intro a CSS",
+      name: "MIE",
+      category: "ecommerce",
+      description: "Grupo 1 - Sesión 4",
       time: "8:00pm GMT-5 ",
     },
     {
       day: 15,
-      name: "MAR",
-      category: "javascript",
-      description: "Funciones",
+      name: "JUE",
+      category: "trabajo-remoto",
+      description: "Sesión 4",
       time: "8:00pm GMT-5 ",
     },
     {
       day: 16,
-      name: "MIÉ",
-      category: "css",
-      description: "Modelo de caja",
-      time: "8:00pm GMT-5 ",
-    },
-    {
-      day: 17,
-      name: "JUE",
-      category: "javascript",
-      description: "Arreglos",
-      time: "8:00pm GMT-5 ",
-    },
-    {
-      day: 18,
       name: "VIE",
-      category: "live",
-      description: "Próximamente",
+      category: "ecommerce",
+      description: "Grupo 1 - Sesión 5",
+      time: "8:00pm GMT-5 ",
+    },
+    {
+      day: 19,
+      // name: "LUN",
+      // category: "ecommerce",
+      // description: "Grupo 2 - Sesión 5",
+      // time: "8:00pm GMT-5 ",
+    },
+    {
+      day: 20,
+      name: "MAR",
+      category: "ecommerce",
+      description: "Grupo 2 - Sesión 1",
       time: "8:00pm GMT-5 ",
     },
     {
       day: 21,
-      name: "LUN",
-      category: "css",
-      description: "Selectores, clases e Ids",
+      name: "MIE",
+      category: "trabajo-remoto",
+      description: "Grupo 2 - Sesión 1",
       time: "8:00pm GMT-5 ",
     },
     {
       day: 22,
-      name: "MAR",
-      category: "javascript",
-      description: "Metodos con arreglos",
+      name: "JUE",
+      category: "ecommerce",
+      description: "Grupo 2 - Sesión 2",
       time: "8:00pm GMT-5 ",
     },
     {
       day: 23,
-      name: "MIÉ",
-      category: "css",
-      description: "Herencia y especificidad",
-      time: "8:00pm GMT-5 ",
-    },
-    {
-      day: 24,
-      name: "JUE",
-      category: "javascript",
-      description: "Objetos",
-      time: "8:00pm GMT-5 ",
-    },
-    {
-      day: 25,
       name: "VIE",
-      category: "live",
-      description: "Próximamente",
+      category: "trabajo-remoto",
+      description: "Grupo 2 - Sesión 2",
+      time: "8:00pm GMT-5 ",
+    },
+    {
+      day: 26,
+      // name: "LUN",
+      // category: "javascript",
+      // description: "Objetos",
+      // time: "8:00pm GMT-5 ",
+    },
+    {
+      day: 27,
+      name: "MAR",
+      category: "ecommerce",
+      description: "Grupo 2 - Sesión 3",
       time: "8:00pm GMT-5 ",
     },
     {
       day: 28,
-      name: "LUN",
-      category: "css",
-      description: "Position y Display",
+      name: "MIE",
+      category: "trabajo-remoto",
+      description: "Grupo 2 - Sesión 3",
       time: "8:00pm GMT-5 ",
     },
     {
       day: 29,
-      name: "MAR",
-      category: "javascript",
-      description: "Proyecto Final",
+      name: "JUE",
+      category: "ecommerce",
+      description: "Grupo 2 - Sesión 4",
       time: "8:00pm GMT-5 ",
     },
     {
       day: 30,
-      name: "MIÉ",
-      category: "css",
-      description: "Maquetando nuestro proyecto",
+      name: "VIE",
+      category: "trabajo-remoto",
+      description: "Grupo 2 - Sesión 4",
       time: "8:00pm GMT-5 ",
-    },
-    {
-      day: 1,
-      name: "JUE",
-      category: "english",
-      description: "Chill and meet",
-      time: "9:00pm GMT-5 ",
     },
   ];
 
@@ -194,6 +190,8 @@ const Calendar = () => {
           <div className="calendar__header">MIÉ</div>
           <div className="calendar__header">JUE</div>
           <div className="calendar__header">VIE</div>
+          <div className="calendar__item vacio"></div>
+          <div className="calendar__item vacio"></div>
           <div className="calendar__item vacio"></div>
           {calendar.map((item, id) => {
             return (

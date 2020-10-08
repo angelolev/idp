@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import item1 from "./item1.webp";
 import item2 from "./item2.webp";
 import item3 from "./item3.webp";
 
 const HowItWorks = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <section className="how-it-works">
       <header></header>

@@ -52,7 +52,7 @@ const Nav = () => {
           <div className="nav__menu fadeIn" id="nav__menu">
             <ul>
               <li>
-                <Link to={`/#courses`}>Cursos</Link>
+                <a href="/#courses">Cursos</a>
               </li>
               <li>
                 <Link to={`/calendario`}>Calendario</Link>

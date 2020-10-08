@@ -20,6 +20,10 @@
   &-item {
     margin-bottom: 10px;
 
+    span {
+      color: tomato;
+    }
+
     .form-input {
       background-color: $color-white;
       border: 0;

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import books from "./books.webp";
 import meet from "./meet.webp";
 import rocket from "./rocket.webp";
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <section className="about-us">
       <header></header>
