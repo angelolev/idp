@@ -49,6 +49,7 @@ const FormSignUp = () => {
               ref={register({ required: true })}
               placeholder="Nombres"
               className="form-input"
+              maxLength="30"
             />
             {errors.name && <span>Ingresa tu nombre</span>}
           </div>
@@ -59,6 +60,7 @@ const FormSignUp = () => {
               ref={register({ required: true })}
               placeholder="Apellidos"
               className="form-input"
+              maxLength="30"
             />
             {errors.lastname && <span>Ingresa tu apellido</span>}
           </div>
@@ -69,6 +71,7 @@ const FormSignUp = () => {
               ref={register({ required: true })}
               placeholder="Celular"
               className="form-input"
+              maxLength="12"
             />
             {errors.phone && <span>Ingresa tu celular</span>}
           </div>
@@ -79,6 +82,7 @@ const FormSignUp = () => {
               ref={register({ required: true })}
               placeholder="Correo electrónico"
               className="form-input"
+              maxLength="50"
             />
             {errors.email && (
               <span>Ingresa una dirección de correo válida</span>
