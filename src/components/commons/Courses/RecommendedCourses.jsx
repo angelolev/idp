@@ -11,25 +11,25 @@ const RecommendedCourses = () => {
       <RecommendedCourse
         courseName="Herramientas digitales para trabajo remoto"
         courseImage={herramientas}
-        students="204"
+        students="119"
         link="trabajo-remoto"
       />
-      <RecommendedCourse
+      {/* <RecommendedCourse
         courseName="Redes sociales para negocios"
         courseImage={cm}
         students="259"
         link="cm"
-      />
+      /> */}
       <RecommendedCourse
-        courseName="Herramientas digitales para profesores"
+        courseName="Herramientas digitales para docentes"
         courseImage={docentes}
-        students="320"
+        students="131"
         link="docentes"
       />
       <RecommendedCourse
         courseName="Creando tu propia tienda online"
         courseImage={ecommerce}
-        students="189"
+        students="103"
         link="ecommerce"
       />
     </>

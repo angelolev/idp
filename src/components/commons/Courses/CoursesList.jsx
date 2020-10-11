@@ -31,13 +31,13 @@ const CoursesList = () => {
           link="cm"
           title="Redes sociales para negocios"
           description="Aprende a gestionar redes sociales profesionalmente. Crear contenidos disruptivos y automatizar publicaciones en Facebook e Instagram."
-        />
+        /> */}
         <CourseCard
           image={courseTeacher}
           link="docentes"
-          title="Herramientas digitales para profesores"
+          title="Herramientas digitales para docentes"
           description="Moderniza y lleva tus clases al siguiente nivel, implementando herramientas remotas que te permitan ejecutar tus clases online"
-        /> */}
+        />
       </div>
     </section>
   );

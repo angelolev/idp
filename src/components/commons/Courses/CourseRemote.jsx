@@ -108,6 +108,17 @@ const CourseRemote = (props) => {
                       <div className="session">
                         <div className="session__name">
                           <p>
+                            <span className="icon icon-player"></span> Trabajo
+                            presencial vs trabajo remoto
+                          </p>
+                        </div>
+                        <div className="session__duration">
+                          <p>01:00</p>
+                        </div>
+                      </div>
+                      <div className="session">
+                        <div className="session__name">
+                          <p>
                             <span className="icon icon-player"></span> Creando
                             tu entorno de trabajo remoto
                           </p>
@@ -142,7 +153,7 @@ const CourseRemote = (props) => {
                   </div>
                   <div className="session__group">
                     <div className="group__title">
-                      <h3>Herramientas colaborativas para trabajo remoto</h3>
+                      <h3>2. Herramientas colaborativas para trabajo remoto</h3>
                     </div>
                     <div className="group__sessions">
                       <div className="session">
@@ -160,8 +171,8 @@ const CourseRemote = (props) => {
                       <div className="session">
                         <div className="session__name">
                           <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Principales softwares para teletrabajo
+                            <span className="icon icon-player"></span> Software
+                            escencial para el trabajo remoto
                           </p>
                         </div>
                         <div className="session__duration">
@@ -222,7 +233,7 @@ const CourseRemote = (props) => {
                       <div className="session">
                         <div className="session__name">
                           <p>
-                            <span className="icon icon-player"></span> Gestion
+                            <span className="icon icon-player"></span> Gestión
                             humana de equipos remotos
                           </p>
                         </div>
@@ -252,7 +263,7 @@ const CourseRemote = (props) => {
                         <div className="session__name">
                           <p>
                             <span className="icon icon-player"></span>{" "}
-                            Integración de Slack en tu empresa
+                            Integrando las herramientas en tu día a día
                           </p>
                         </div>
                         <div className="session__duration">
@@ -284,10 +295,10 @@ const CourseRemote = (props) => {
                     <div className="instructor__info">
                       <h4>Angelo Leva</h4>
                       <p>
-                        Ingeniero de software apasionado por tecnologías web y
-                        móvil. Desde el 2012 me dedico a desarrollar soluciones
-                        basadas en tech para múltiples instituciones, tanto
-                        públicas como privadas.
+                        Ingeniero de software especialista en tecnologías web.
+                        Desde el 2012 me dedico a desarrollar soluciones basadas
+                        en tech y capacitar usuarios para múltiples
+                        instituciones, tanto públicas como privadas.
                       </p>
                     </div>
                   </div>

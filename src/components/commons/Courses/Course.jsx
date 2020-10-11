@@ -423,10 +423,10 @@ const Course = (props) => {
                     <div className="instructor__info">
                       <h4>Angelo Leva</h4>
                       <p>
-                        Ingeniero de software apasionado por tecnologías web y
-                        móvil. Desde el 2012 me dedico a desarrollar soluciones
-                        basadas en tech para múltiples instituciones, tanto
-                        públicas como privadas.
+                        Ingeniero de software especialista en tecnologías web.
+                        Desde el 2012 me dedico a desarrollar soluciones basadas
+                        en tech y capacitar usuarios para múltiples
+                        instituciones, tanto públicas como privadas.
                       </p>
                     </div>
                   </div>
