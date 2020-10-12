@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import RecommendedCourses from "./RecommendedCourses";
+import Session from "./CourseSession";
 import Modal from "react-modal";
 import FormSignUp from "../Forms/FormSignUp";
 import instructor from "./i-angelo.jpg";
@@ -95,7 +96,10 @@ const CourseTeacher = (props) => {
 
                 <h2>Inversión</h2>
                 <ul>
-                  <li>S/100 soles</li>
+                  <li>
+                    <span>S/100 soles</span>
+                    <span>S/60 soles</span>
+                  </li>
                   <li>Certificado Digital de participación</li>
                 </ul>
               </div>
@@ -112,50 +116,19 @@ const CourseTeacher = (props) => {
                       </h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Presentación del curso
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Integración de las TIC en el aula
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> G Suite
-                            para la educación
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Conociendo Google Classroom
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session name="Presentación del curso" duration="01:00" />
+                      <Session
+                        name="Integración de las TIC en el aula"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="G Suite para la educación"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Conociendo Google Classroom"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                   <div className="session__group">
@@ -163,62 +136,27 @@ const CourseTeacher = (props) => {
                       <h3>2. Creación y publicación de contenidos</h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Crear y
-                            configurar una clase
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Invitar a
-                            sus alumnos a una clase
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Crear y
-                            compartir documentos
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>Crear
-                            formularios como examen/encuesta
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>Incluir
-                            materiales educativos: enlaces, archivos, imágenes y
-                            videos
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session
+                        name="Crear y configurar una clase"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Invitar a sus alumnos a una clase"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Crear y compartir documentos"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Crear formularios como examen/encuesta"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Incluir materiales educativos: enlaces, archivos, imágenes y
+                        videos"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                   <div className="session__group">
@@ -226,52 +164,24 @@ const CourseTeacher = (props) => {
                       <h3>3. Comunicación y trabajo colaborativo</h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Videollamadas: programando clases con google meet
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Videollamadas: aprendiendo a compartir pantalla,
-                            pestaña o aplicación
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Videollamadas: conociendo las diferentes vistas de
-                            Google Meet
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Classroom: Cómo crear tareas para estudiantes
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session
+                        name="Videollamadas: programando clases con google meet"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Videollamadas: aprendiendo a compartir pantalla,
+                        pestaña o aplicación"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Videollamadas: conociendo las diferentes vistas de
+                        Google Meet"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Classroom: Cómo crear tareas para estudiantes"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                   <div className="session__group">
@@ -279,62 +189,27 @@ const CourseTeacher = (props) => {
                       <h3>4. Evaluación del aprendizaje del alumno</h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Retroalimentación de tareas o actividades de
-                            aprendizaje
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Calificación de tareas o actividades
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Exportar
-                            calificaciones a un excel
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Reporte
-                            de calificaciones en PDF
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Kahoot
-                            para evaluar alumnos
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session
+                        name="Retroalimentación de tareas o actividades de
+                        aprendizaje"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Calificación de tareas o actividades"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Exportar calificaciones a un excel"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Reporte de calificaciones en PDF"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Kahoot para evaluar alumnos"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                   <div className="session__group">
@@ -342,50 +217,16 @@ const CourseTeacher = (props) => {
                       <h3>5. Extras</h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Grabador
-                            de pantalla
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Captura
-                            de pantalla
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Anotaciones en pantalla para explicar tus clases
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Tutoría
-                            INDIVIDUAL con el instructor
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session name="Grabador de pantalla" duration="01:00" />
+                      <Session name="Captura de pantalla" duration="01:00" />
+                      <Session
+                        name="Anotaciones en pantalla para explicar tus clases"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Tutoría INDIVIDUAL con el instructor"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                 </div>

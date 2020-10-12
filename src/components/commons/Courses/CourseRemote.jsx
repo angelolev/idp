@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import RecommendedCourses from "./RecommendedCourses";
+import Session from "./CourseSession";
 import Modal from "react-modal";
 import FormSignUp from "../Forms/FormSignUp";
 import instructor from "./i-angelo.jpg";
@@ -93,7 +94,10 @@ const CourseRemote = (props) => {
 
                 <h2>Inversión</h2>
                 <ul>
-                  <li>S/100 soles</li>
+                  <li>
+                    <span>S/100 soles</span>
+                    <span>S/60 soles</span>
+                  </li>
                   <li>Certificado Digital de participación</li>
                 </ul>
               </div>
@@ -107,61 +111,23 @@ const CourseRemote = (props) => {
                       <h3>1. Conociendo el teletrabajo</h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Presentación del curso
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Trabajo
-                            presencial vs trabajo remoto
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Creando
-                            tu entorno de trabajo remoto
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Comunicación efectiva para equipos remotos
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Trabajo
-                            remoto y nuestra actualidad
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session name="Presentación del curso" duration="01:00" />
+                      <Session
+                        name="Trabajo presencial vs trabajo remoto"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Creando tu entorno de trabajo remoto"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Comunicación efectiva para equipos remotos"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Trabajo remoto y nuestra actualidad"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                   <div className="session__group">
@@ -169,51 +135,19 @@ const CourseRemote = (props) => {
                       <h3>2. Herramientas colaborativas para trabajo remoto</h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Cómo
-                            utilizar herramientas colaborativas en el
-                            teletrabajo
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Software
-                            escencial para el trabajo remoto
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Organización personal
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>Cómo
-                            encontrar trabajos remotos
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session
+                        name="Cómo utilizar herramientas colaborativas en el teletrabajo"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Software escencial para el trabajo remoto"
+                        duration="01:00"
+                      />
+                      <Session name="Organización personal" duration="01:00" />
+                      <Session
+                        name="Cómo encontrar trabajos remotos"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                   <div className="session__group">
@@ -221,50 +155,22 @@ const CourseRemote = (props) => {
                       <h3>3. Estrategias a seguir en teletrabajo</h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Flujos de
-                            trabajo efectivos
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Equilibrio entre trabajo y familia
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Gestión
-                            humana de equipos remotos
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Implementando trabajo remoto en tu empresa
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session
+                        name="Flujos de trabajo efectivos"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Equilibrio entre trabajo y familia"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Gestión humana de equipos remotos"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Implementando trabajo remoto en tu empresa"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                   <div className="session__group">
@@ -272,28 +178,14 @@ const CourseRemote = (props) => {
                       <h3>4. Próximos pasos</h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Integrando las herramientas en tu día a día
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Tutoría
-                            INDIVIDUAL con el instructor
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session
+                        name="Integrando las herramientas en tu día a día"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Tutoría INDIVIDUAL con el instructor"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                 </div>

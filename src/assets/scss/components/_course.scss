@@ -309,6 +309,14 @@
           position: relative;
           top: 3px;
         }
+
+        span {
+          &:first-child {
+            color: tomato;
+            margin-right: 10px;
+            text-decoration: line-through;
+          }
+        }
       }
     }
   }

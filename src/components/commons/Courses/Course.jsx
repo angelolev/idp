@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import RecommendedCourses from "./RecommendedCourses";
+import Session from "./CourseSession";
 import Modal from "react-modal";
 import FormSignUp from "../Forms/FormSignUp";
 import instructor from "./i-angelo.jpg";
@@ -102,7 +103,10 @@ const Course = (props) => {
 
                 <h2>Inversión</h2>
                 <ul>
-                  <li>S/100 soles</li>
+                  <li>
+                    <span>S/100 soles</span>
+                    <span>S/60 soles</span>
+                  </li>
                   <li>Certificado Digital de participación</li>
                 </ul>
               </div>
@@ -116,50 +120,16 @@ const Course = (props) => {
                       <h3>1. Primeros pasos en WooCommerce</h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Presentación del curso
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> ¿Qué es y
-                            por qué utilizar WooCommerce?
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Instalando WooCommerce
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Entendiendo cómo funciona WooCommerce
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session name="Presentación del curso" duration="01:00" />
+                      <Session
+                        name="¿Qué es y por qué utilizar WooCommerce?"
+                        duration="01:00"
+                      />
+                      <Session name="Instalando WooCommerce" duration="01:00" />
+                      <Session
+                        name="Entendiendo cómo funciona WooCommerce"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                   <div className="session__group">
@@ -167,72 +137,27 @@ const Course = (props) => {
                       <h3>2. Gestión de productos</h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Creando
-                            productos
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Creando
-                            un combo de productos
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Creando
-                            un producto variable
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Creando
-                            un producto digital
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Categorías de productos
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Importando productos masivamente
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session name="Creando productos" duration="01:00" />
+                      <Session
+                        name="Creando un combo de productos"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Creando un producto variable"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Creando un producto digital"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Categorías de productos"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Importando productos masivamente"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                   <div className="session__group">
@@ -240,50 +165,22 @@ const Course = (props) => {
                       <h3>3. Diseño de tu tienda</h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Configurando las páginas de tu tienda
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Agregando
-                            un menú principal a tu página
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Conociendo las plantillas
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Te regalo
-                            para mi, el mejor tema a usar en una tienda (BONUS)
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session
+                        name="Configurando las páginas de tu tienda"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Agregando un menú principal a tu página"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Conociendo las plantillas"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Te regalo para mi, el mejor tema a usar en una tienda (BONUS)"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                   <div className="session__group">
@@ -291,61 +188,26 @@ const Course = (props) => {
                       <h3>4. Configuraciones de tu tienda</h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Flujo de
-                            pedido y compra en tu tienda
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Creando
-                            cupones de descuento
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Configurando tus usuarios
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Configurando el envío de pedidos
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Configurando las notificaciones de email
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session
+                        name="Flujo de pedido y compra en tu tienda"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Creando cupones de descuento"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Configurando tus usuarios"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Configurando el envío de pedidos"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Configurando las notificaciones de email"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                   <div className="session__group">
@@ -353,39 +215,15 @@ const Course = (props) => {
                       <h3>5. Métodos de pago</h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Configurando distintos métodos de pago
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Configurando Paypal
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Configurando Mercado Pago
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session
+                        name="Configurando distintos métodos de pago"
+                        duration="01:00"
+                      />
+                      <Session name="Configurando Paypal" duration="01:00" />
+                      <Session
+                        name="Configurando Mercado Pago"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                   <div className="session__group">
@@ -393,17 +231,10 @@ const Course = (props) => {
                       <h3>6. Últimos pasos</h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span>{" "}
-                            Conclusiones del curso y siguientes pasos
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session
+                        name="Conclusiones del curso y siguientes pasos"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                   <div className="session__group">
@@ -411,17 +242,10 @@ const Course = (props) => {
                       <h3>7. Tutoría</h3>
                     </div>
                     <div className="group__sessions">
-                      <div className="session">
-                        <div className="session__name">
-                          <p>
-                            <span className="icon icon-player"></span> Tutoría
-                            INDIVIDUAL con el instructor
-                          </p>
-                        </div>
-                        <div className="session__duration">
-                          <p>01:00</p>
-                        </div>
-                      </div>
+                      <Session
+                        name="Tutoría INDIVIDUAL con el instructor"
+                        duration="01:00"
+                      />
                     </div>
                   </div>
                 </div>
