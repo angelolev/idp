@@ -78,6 +78,13 @@ const Course = (props) => {
                   empezar a vender por Internet.
                 </p>
 
+                <h2>Metodología</h2>
+                <ul>
+                  <li>Tutor personal</li>
+                  <li>Metodología 100% virtual</li>
+                  <li>Clases en vivo</li>
+                </ul>
+
                 <h2>Lo que aprenderás</h2>
                 <ul>
                   <li>Armar tu propia tienda online(woocommerce)</li>
@@ -91,6 +98,12 @@ const Course = (props) => {
                     Aprenderás a editar y hacer todos los cambios que necesites
                     o desees hacer en un futuro.
                   </li>
+                </ul>
+
+                <h2>Inversión</h2>
+                <ul>
+                  <li>S/100 soles</li>
+                  <li>Certificado Digital de participación</li>
                 </ul>
               </div>
             </div>

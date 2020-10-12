@@ -76,12 +76,25 @@ const CourseRemote = (props) => {
                   motivado y distribuido por múltiples países.
                 </p>
 
+                <h2>Metodología</h2>
+                <ul>
+                  <li>Tutor personal</li>
+                  <li>Metodología 100% virtual</li>
+                  <li>Clases en vivo</li>
+                </ul>
+
                 <h2>Lo que aprenderás</h2>
                 <ul>
                   <li>Organización personal para trabajo remoto</li>
                   <li>Comunicación efectiva para equipos remotos</li>
                   <li>Herramientas colaborativas para el teletrabajo</li>
                   <li>Cómo conseguir trabajos remotos</li>
+                </ul>
+
+                <h2>Inversión</h2>
+                <ul>
+                  <li>S/100 soles</li>
+                  <li>Certificado Digital de participación</li>
                 </ul>
               </div>
             </div>

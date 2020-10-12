@@ -18,9 +18,9 @@ const Nav = () => {
     });
   });
 
-  useEffect(() => {
-    getUserState();
-  });
+  // useEffect(() => {
+  //   getUserState();
+  // });
 
   const showMenu = () => {
     let navMenu = document.getElementById("nav__menu");
