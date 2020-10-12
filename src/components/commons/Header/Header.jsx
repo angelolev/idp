@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "./bg-header.jpg";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   return (
@@ -11,7 +11,8 @@ const Header = () => {
             Tenemos para ti diferentes cursos donde aprenderás lo necesario para
             triunfar en esta nueva era digital.{" "}
           </p>
-          <a href="/#courses">Inscríbete ahora!</a>
+          {/* <a href="/#courses">Inscríbete ahora!</a> */}
+          <HashLink to="/#courses">Inscríbete ahora!</HashLink>
         </div>
       </div>
     </header>
