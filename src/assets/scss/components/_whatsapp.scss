@@ -1,0 +1,17 @@
+.whatsapp-cta {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+  }
+
+  .icon {
+    background: rgb(35, 191, 35);
+    color: $color-white;
+    font-size: 50px;
+    border-radius: 50%;
+  }
+}
