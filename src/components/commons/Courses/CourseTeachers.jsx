@@ -4,6 +4,11 @@ import Session from "./CourseSession";
 import Modal from "react-modal";
 import FormSignUp from "../Forms/FormSignUp";
 import instructor from "./i-angelo.jpg";
+import bbva from "./bbva.jpg";
+import bcp from "./bcp.png";
+import interbank from "./interbank.png";
+import plin from "./plin.png";
+import yape from "./yape.png";
 
 const CourseTeacher = (props) => {
   useEffect(() => {
@@ -95,7 +100,7 @@ const CourseTeacher = (props) => {
                 </ul>
 
                 <h2>Inversión</h2>
-                <ul>
+                <ul className="price">
                   <li>
                     <span>S/100 soles</span>
                     <span>S/60 soles</span>
@@ -272,7 +277,35 @@ const CourseTeacher = (props) => {
         overlayClassName="modal__overlay"
       >
         <div className="modal__content">
-          <p>modal text</p>
+          <p>
+            Tenemos para ti múltiples opciones disponibles para que puedas ser
+            parte de esta nueva era digital:
+          </p>
+          <ul>
+            <li>
+              <img src={bbva} alt="" />
+            </li>
+            <li>
+              <img src={bcp} alt="" />
+            </li>
+            <li>
+              <img src={interbank} alt="" />
+            </li>
+            <li>
+              <img src={plin} alt="" />
+            </li>
+            <li>
+              <img src={yape} alt="" />
+            </li>
+          </ul>
+          <p>
+            También puedes <b>pagar en un link con VISA</b>, escríbenos para
+            ayudarte!
+          </p>
+          <p>
+            Elige la que más se acomode a ti y cuéntanos cuál es para poder
+            ayudarte a realizar el pago.
+          </p>
           <button onClick={toggleModal}>Cerrar</button>
         </div>
       </Modal>

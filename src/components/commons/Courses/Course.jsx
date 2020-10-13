@@ -4,6 +4,11 @@ import Session from "./CourseSession";
 import Modal from "react-modal";
 import FormSignUp from "../Forms/FormSignUp";
 import instructor from "./i-angelo.jpg";
+import bbva from "./bbva.jpg";
+import bcp from "./bcp.png";
+import interbank from "./interbank.png";
+import plin from "./plin.png";
+import yape from "./yape.png";
 
 const Course = (props) => {
   useEffect(() => {
@@ -29,6 +34,7 @@ const Course = (props) => {
               <div className="course__image">
                 {/* <img src={courseImage} alt="" /> */}
                 <FormSignUp />
+                <a onClick={toggleModal}>Ver opciones de pago</a>
               </div>
               <div className="course__description">
                 <h1>Creando tu propia tienda online</h1>
@@ -49,9 +55,9 @@ const Course = (props) => {
                   <li>Martes y Jueves 08:00PM - 09:00PM</li>
                   <li>Miercoles y Viernes 08:00PM - 09:00PM</li>
                 </ul>
-                <button onClick={toggleModal}>
+                {/* <button onClick={toggleModal}>
                   Cómpralo ahora por S/50.00
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -102,7 +108,7 @@ const Course = (props) => {
                 </ul>
 
                 <h2>Inversión</h2>
-                <ul>
+                <ul className="price">
                   <li>
                     <span>S/100 soles</span>
                     <span>S/60 soles</span>
@@ -291,7 +297,35 @@ const Course = (props) => {
         overlayClassName="modal__overlay"
       >
         <div className="modal__content">
-          <p>modal text</p>
+          <p>
+            Tenemos para ti múltiples opciones disponibles para que puedas ser
+            parte de esta nueva era digital:
+          </p>
+          <ul>
+            <li>
+              <img src={bbva} alt="" />
+            </li>
+            <li>
+              <img src={bcp} alt="" />
+            </li>
+            <li>
+              <img src={interbank} alt="" />
+            </li>
+            <li>
+              <img src={plin} alt="" />
+            </li>
+            <li>
+              <img src={yape} alt="" />
+            </li>
+          </ul>
+          <p>
+            También puedes <b>pagar en un link con VISA</b>, escríbenos para
+            ayudarte!
+          </p>
+          <p>
+            Elige la que más se acomode a ti y cuéntanos cuál es para poder
+            ayudarte a realizar el pago.
+          </p>
           <button onClick={toggleModal}>Cerrar</button>
         </div>
       </Modal>

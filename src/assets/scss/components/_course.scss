@@ -130,7 +130,7 @@
     }
 
     button {
-      display: none;
+      // display: none;
       border: 0;
       color: $color-white;
       background-color: $color-primary;
@@ -225,6 +225,19 @@
       margin-top: 0;
     }
 
+    a {
+      text-align: center;
+      display: block;
+      margin-top: 10px;
+      text-decoration: underline;
+      color: #3b8dff;
+      cursor: pointer;
+
+      @include breakpoint($sm) {
+        text-align: right;
+      }
+    }
+
     img {
       max-width: 100%;
 
@@ -309,12 +322,28 @@
           position: relative;
           top: 3px;
         }
+      }
 
-        span {
+      &.price {
+        li {
           &:first-child {
-            color: tomato;
-            margin-right: 10px;
-            text-decoration: line-through;
+            font-size: 22px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+          }
+
+          &:before {
+            font-size: 16px;
+            font-weight: normal;
+          }
+
+          span {
+            &:first-child {
+              color: tomato;
+              margin-right: 10px;
+              text-decoration: line-through;
+            }
           }
         }
       }
