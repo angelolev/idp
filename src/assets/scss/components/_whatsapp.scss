@@ -14,4 +14,18 @@
     font-size: 50px;
     border-radius: 50%;
   }
+
+  &__mobile {
+    @include breakpoint($md) {
+      display: none;
+    }
+  }
+
+  &__desktop {
+    display: none;
+
+    @include breakpoint($md) {
+      display: block;
+    }
+  }
 }
