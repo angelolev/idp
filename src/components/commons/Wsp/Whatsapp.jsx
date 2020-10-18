@@ -6,14 +6,14 @@ const Whatsapp = () => {
       <a
         class="whatsapp-cta__mobile"
         target="_blank"
-        href="https://wa.link/fkwizg"
+        href="https://wa.link/jmlfr7"
       >
         <span className="icon icon-whatsapp"></span>
       </a>
       <a
         class="whatsapp-cta__desktop"
         target="_blank"
-        href="https://web.whatsapp.com/send?phone=51975758095&text="
+        href="https://web.whatsapp.com/send?phone=51964124711&text="
       >
         <span className="icon icon-whatsapp"></span>
       </a>
