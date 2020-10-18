@@ -34,6 +34,7 @@ const CourseTeacher = (props) => {
               <div className="course__image">
                 {/* <img src={courseImage} alt="" /> */}
                 <FormSignUp />
+                <a onClick={toggleModal}>Ver opciones de pago</a>
               </div>
               <div className="course__description">
                 <h1>Herramientas digitales para docentes</h1>
@@ -48,14 +49,14 @@ const CourseTeacher = (props) => {
                   <span className="icon icon-time"></span> + 7 horas de clase +
                   tutoría individual
                 </small>
-                <h4>Horarios</h4>
+                {/* <h4>Horarios</h4>
                 <ul>
                   <li>Martes y Jueves 08:00PM - 09:00PM</li>
                   <li>Miercoles y Viernes 08:00PM - 09:00PM</li>
                 </ul>
                 <button onClick={toggleModal}>
                   Cómpralo ahora por S/50.00
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
