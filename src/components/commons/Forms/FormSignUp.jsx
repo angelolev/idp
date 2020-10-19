@@ -42,6 +42,7 @@ const FormSignUp = () => {
           <h2>Inscríbete aquí</h2>
         </div>
         <div className="join-us__form-content">
+          <small>Obtén un descuento exclusivo completando tus datos HOY.</small>
           <div className="join-us__form-item">
             <input
               name="name"
