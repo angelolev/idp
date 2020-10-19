@@ -47,15 +47,15 @@ const CourseRemote = (props) => {
                   <span className="icon icon-user"></span> 119 inscritos
                 </small>
                 <small>
-                  <span className="icon icon-time"></span> + 4 horas de clase +
-                  tutoría individual
+                  <span className="icon icon-time"></span> 04 días | + 4 horas
+                  de clase | Asesoría individual
                 </small>
-                {/* <h4>Horarios</h4>
+                <h4>Horarios</h4>
                 <ul>
-                  <li>Martes y Jueves 08:00PM - 09:00PM</li>
-                  <li>Miercoles y Viernes 08:00PM - 09:00PM</li>
+                  <li>Lunes a Jueves 09:00 PM</li>
+                  <li>Martes y Jueves 09:30 PM</li>
                 </ul>
-                <button onClick={toggleModal}>
+                {/* <button onClick={toggleModal}>
                   Cómpralo ahora por S/50.00
                 </button> */}
               </div>
@@ -102,7 +102,7 @@ const CourseRemote = (props) => {
                 <ul className="price">
                   <li>
                     <span>S/100 soles</span>
-                    <span>S/60 soles</span>
+                    <span>S/50 soles</span>
                   </li>
                   <li>Certificado Digital de participación</li>
                 </ul>
@@ -149,9 +149,20 @@ const CourseRemote = (props) => {
                         name="Software escencial para el trabajo remoto"
                         duration="01:00"
                       />
-                      <Session name="Organización personal" duration="01:00" />
                       <Session
-                        name="Cómo encontrar trabajos remotos"
+                        name="Videollamadas: Meet vs Zoom"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Usando Trello como organizador personal"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Comunicación con mi equipo: Slack, Discord, Whatsapp, Telegram"
+                        duration="01:00"
+                      />
+                      <Session
+                        name="Cómo buscar y encontrar trabajos remotos"
                         duration="01:00"
                       />
                     </div>
@@ -189,7 +200,7 @@ const CourseRemote = (props) => {
                         duration="01:00"
                       />
                       <Session
-                        name="Tutoría INDIVIDUAL con el instructor"
+                        name="Asesoría INDIVIDUAL con el instructor"
                         duration="01:00"
                       />
                     </div>

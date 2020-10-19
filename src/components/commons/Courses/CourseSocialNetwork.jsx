@@ -29,7 +29,7 @@ const Course = (props) => {
               </small>
               <small>
                 <span className="icon icon-time"></span> + 4 horas de clase +
-                tutoría individual
+                asesoría individual
               </small>
               <h4>Horarios</h4>
               <ul>

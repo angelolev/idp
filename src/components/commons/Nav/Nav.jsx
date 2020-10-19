@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   const [scroll, setScroll] = useState(true);
   const [isLogged, setIsLogged] = useState(false);
+
   let navClasses = "nav";
 
   useEffect(() => {
@@ -23,8 +24,13 @@ const Nav = () => {
   // });
 
   const showMenu = () => {
-    let navMenu = document.getElementById("nav__menu");
+    const navMenu = document.getElementById("nav__menu");
     navMenu.classList.toggle("show");
+  };
+
+  const closeMenu = () => {
+    const navMenu = document.getElementById("nav__menu");
+    navMenu.classList.remove("show");
   };
 
   const logOut = () => {
@@ -49,7 +55,7 @@ const Nav = () => {
           <div className="nav__icon" onClick={showMenu}>
             <span className="icon icon-menu"></span>
           </div>
-          <div className="nav__menu fadeIn" id="nav__menu">
+          <div className="nav__menu fadeIn" id="nav__menu" onClick={closeMenu}>
             <ul>
               <li>
                 <a href="/#courses">Cursos</a>

@@ -47,14 +47,14 @@ const Course = (props) => {
                   <span className="icon icon-user"></span> 103 inscritos
                 </small>
                 <small>
-                  <span className="icon icon-time"></span> + 5 horas de clase +
-                  tutoría individual
+                  <span className="icon icon-time"></span> 05 días | + 5 horas
+                  de clase | Asesoría individual
                 </small>
-                {/* <h4>Horarios</h4>
+                <h4>Horarios</h4>
                 <ul>
-                  <li>Martes y Jueves 08:00PM - 09:00PM</li>
-                  <li>Miercoles y Viernes 08:00PM - 09:00PM</li>
-                </ul> */}
+                  <li>Lunes a Viernes 08:00 PM</li>
+                  <li>Lunes, Miércoles y Viernes 09:30 PM</li>
+                </ul>
                 {/* <button onClick={toggleModal}>
                   Cómpralo ahora por S/50.00
                 </button> */}
@@ -111,7 +111,7 @@ const Course = (props) => {
                 <ul className="price">
                   <li>
                     <span>S/100 soles</span>
-                    <span>S/60 soles</span>
+                    <span>S/50 soles</span>
                   </li>
                   <li>Certificado Digital de participación</li>
                 </ul>
@@ -249,7 +249,7 @@ const Course = (props) => {
                     </div>
                     <div className="group__sessions">
                       <Session
-                        name="Tutoría INDIVIDUAL con el instructor"
+                        name="Asesoría INDIVIDUAL con el instructor"
                         duration="01:00"
                       />
                     </div>

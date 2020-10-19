@@ -46,15 +46,15 @@ const CourseTeacher = (props) => {
                   <span className="icon icon-user"></span> 131 inscritos
                 </small>
                 <small>
-                  <span className="icon icon-time"></span> + 7 horas de clase +
-                  tutoría individual
+                  <span className="icon icon-time"></span> 05 días | + 7 horas
+                  de clase | Asesoría individual
                 </small>
-                {/* <h4>Horarios</h4>
+                <h4>Horarios</h4>
                 <ul>
-                  <li>Martes y Jueves 08:00PM - 09:00PM</li>
-                  <li>Miercoles y Viernes 08:00PM - 09:00PM</li>
+                  <li>Lunes a Viernes 08:00 PM</li>
+                  <li>Lunes, Miércoles y Viernes 09:30 PM</li>
                 </ul>
-                <button onClick={toggleModal}>
+                {/* <button onClick={toggleModal}>
                   Cómpralo ahora por S/50.00
                 </button> */}
               </div>
@@ -104,7 +104,7 @@ const CourseTeacher = (props) => {
                 <ul className="price">
                   <li>
                     <span>S/100 soles</span>
-                    <span>S/60 soles</span>
+                    <span>S/50 soles</span>
                   </li>
                   <li>Certificado Digital de participación</li>
                 </ul>
@@ -128,11 +128,7 @@ const CourseTeacher = (props) => {
                         duration="01:00"
                       />
                       <Session
-                        name="G Suite para la educación"
-                        duration="01:00"
-                      />
-                      <Session
-                        name="Conociendo Google Classroom"
+                        name="Herramientas de Google para la educación (Classroom, Drive, Keep, Forms)"
                         duration="01:00"
                       />
                     </div>
@@ -143,24 +139,15 @@ const CourseTeacher = (props) => {
                     </div>
                     <div className="group__sessions">
                       <Session
-                        name="Crear y configurar una clase"
+                        name="Aprende a utilizar Trello como organizador y planeador de clases"
                         duration="01:00"
                       />
                       <Session
-                        name="Invitar a sus alumnos a una clase"
+                        name="Usando Canva para crear infografías y contenido"
                         duration="01:00"
                       />
                       <Session
-                        name="Crear y compartir documentos"
-                        duration="01:00"
-                      />
-                      <Session
-                        name="Crear formularios como examen/encuesta"
-                        duration="01:00"
-                      />
-                      <Session
-                        name="Incluir materiales educativos: enlaces, archivos, imágenes y
-                        videos"
+                        name="Crear y compartir documentos con Drive"
                         duration="01:00"
                       />
                     </div>
@@ -171,7 +158,7 @@ const CourseTeacher = (props) => {
                     </div>
                     <div className="group__sessions">
                       <Session
-                        name="Videollamadas: programando clases con google meet"
+                        name="Videollamadas: conociendo Zoom y Google Meet"
                         duration="01:00"
                       />
                       <Session
@@ -180,12 +167,7 @@ const CourseTeacher = (props) => {
                         duration="01:00"
                       />
                       <Session
-                        name="Videollamadas: conociendo las diferentes vistas de
-                        Google Meet"
-                        duration="01:00"
-                      />
-                      <Session
-                        name="Classroom: Cómo crear tareas para estudiantes"
+                        name="Videollamadas: conociendo las distintas formas de comunicarnos con nuestros alumnos"
                         duration="01:00"
                       />
                     </div>
@@ -196,24 +178,11 @@ const CourseTeacher = (props) => {
                     </div>
                     <div className="group__sessions">
                       <Session
-                        name="Retroalimentación de tareas o actividades de
-                        aprendizaje"
+                        name="Kahoot como motivación y evaluación de los alumnos"
                         duration="01:00"
                       />
                       <Session
-                        name="Calificación de tareas o actividades"
-                        duration="01:00"
-                      />
-                      <Session
-                        name="Exportar calificaciones a un excel"
-                        duration="01:00"
-                      />
-                      <Session
-                        name="Reporte de calificaciones en PDF"
-                        duration="01:00"
-                      />
-                      <Session
-                        name="Kahoot para evaluar alumnos"
+                        name="Creando exámenes con Google Forms"
                         duration="01:00"
                       />
                     </div>
@@ -223,14 +192,17 @@ const CourseTeacher = (props) => {
                       <h3>5. Extras</h3>
                     </div>
                     <div className="group__sessions">
-                      <Session name="Grabador de pantalla" duration="01:00" />
-                      <Session name="Captura de pantalla" duration="01:00" />
                       <Session
-                        name="Anotaciones en pantalla para explicar tus clases"
+                        name="Aprende a grabar tu clase"
                         duration="01:00"
                       />
                       <Session
-                        name="Tutoría INDIVIDUAL con el instructor"
+                        name="Aprende a usar Jamboard como pizarra interactiva"
+                        duration="01:00"
+                      />
+
+                      <Session
+                        name="Asesoría INDIVIDUAL con el instructor"
                         duration="01:00"
                       />
                     </div>
