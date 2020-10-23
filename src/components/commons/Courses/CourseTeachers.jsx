@@ -3,7 +3,7 @@ import RecommendedCourses from "./RecommendedCourses";
 import Session from "./CourseSession";
 import Modal from "react-modal";
 import FormSignUp from "../Forms/FormSignUp";
-import instructor from "./i-angelo.jpg";
+import instructor from "./dei.jpg";
 import bbva from "./bbva.jpg";
 import bcp from "./bcp.png";
 import interbank from "./interbank.png";
@@ -217,12 +217,9 @@ const CourseTeacher = (props) => {
                       <img src={instructor} alt="" />
                     </div>
                     <div className="instructor__info">
-                      <h4>Angelo Leva</h4>
+                      <h4>Deibbie Muñante</h4>
                       <p>
-                        Ingeniero de software especialista en tecnologías web.
-                        Desde el 2012 me dedico a desarrollar soluciones basadas
-                        en tech y capacitar usuarios para múltiples
-                        instituciones, tanto públicas como privadas.
+                      MBA, Comunicador Social y docente universitario, especialista en herramientas digitales de vanguardia. Con conocimientos y experiencia de más de 10 años en marketing, dirección estratégica y finanzas.
                       </p>
                     </div>
                   </div>
