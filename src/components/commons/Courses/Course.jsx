@@ -54,6 +54,7 @@ const Course = (props) => {
                 <ul>
                   <li>Lunes a Viernes 08:00 PM</li>
                   <li>Lunes, Miércoles y Viernes 09:30 PM</li>
+                  <li>Sábado 10:00 AM</li>
                 </ul>
                 {/* <button onClick={toggleModal}>
                   Cómpralo ahora por S/50.00

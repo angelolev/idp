@@ -46,13 +46,14 @@ const CourseTeacher = (props) => {
                   <span className="icon icon-user"></span> 131 inscritos
                 </small>
                 <small>
-                  <span className="icon icon-time"></span> 05 días | + 7 horas
+                  <span className="icon icon-time"></span> 05 días | + 8 horas
                   de clase | Asesoría individual
                 </small>
                 <h4>Horarios</h4>
                 <ul>
                   <li>Lunes a Viernes 08:00 PM</li>
                   <li>Lunes, Miércoles y Viernes 09:30 PM</li>
+                  <li>Sábado 10:00 AM</li>
                 </ul>
                 {/* <button onClick={toggleModal}>
                   Cómpralo ahora por S/50.00
