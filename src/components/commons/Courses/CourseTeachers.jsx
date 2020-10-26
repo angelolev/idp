@@ -106,7 +106,7 @@ const CourseTeacher = (props) => {
                     <span>S/100 soles</span>
                     <span>S/50 soles</span>
                   </li>
-                  <li>Certificado Digital de participación</li>
+                  <li>Certificado Digital de participación por 150 horas</li>
                 </ul>
               </div>
             </div>
