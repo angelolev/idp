@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import RecommendedCourses from "./RecommendedCourses";
 import Session from "./CourseSession";
 import Modal from "react-modal";
@@ -27,6 +28,12 @@ const CourseTeacher = (props) => {
 
   return (
     <>
+      <Helmet htmlAttributes>
+        <html lang="es" />
+        <title>Herramientas digitales para docentes | Innodesign</title>
+        <meta name="description" content="Aprende a utilizar diversas herramientas digitales como Meet, Zoom, Kahoot, Drive y Jamboard para
+                  gestionar toda la actividad de tus alumnos de manera virtual." />
+      </Helmet>
       <section className="course">
         <div className="course__banner docentes">
           <div className="container">
@@ -105,7 +112,7 @@ const CourseTeacher = (props) => {
                 <ul className="price">
                   <li>
                     <span>S/100 soles</span>
-                    <span>S/50 soles</span>
+                    {/* <span>S/50 soles</span> */}
                   </li>
                   <li>Certificado Digital de participación por 150 horas</li>
                 </ul>

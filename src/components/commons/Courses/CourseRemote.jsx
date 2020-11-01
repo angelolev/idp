@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import RecommendedCourses from "./RecommendedCourses";
 import Session from "./CourseSession";
 import Modal from "react-modal";
@@ -27,6 +28,13 @@ const CourseRemote = (props) => {
 
   return (
     <>
+      <Helmet htmlAttributes>
+        <html lang="es" />
+        <title>Herramientas digitales para trabajo remoto | Innodesign</title>
+        <meta name="description" content="Aprende las herramientas, técnicas y estrategias para que
+                  tú, tu empresa y tus clientes obtengan mejores resultados a
+                  través del teletrabajo." />
+      </Helmet>
       <section className="course">
         <div className="course__banner remoto">
           <div className="container">
@@ -102,7 +110,7 @@ const CourseRemote = (props) => {
                 <ul className="price">
                   <li>
                     <span>S/100 soles</span>
-                    <span>S/50 soles</span>
+                    {/* <span>S/50 soles</span> */}
                   </li>
                   <li>Certificado Digital de participación</li>
                 </ul>

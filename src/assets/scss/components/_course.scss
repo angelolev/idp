@@ -338,13 +338,13 @@
             font-weight: normal;
           }
 
-          span {
-            &:first-child {
-              color: tomato;
-              margin-right: 10px;
-              text-decoration: line-through;
-            }
-          }
+          // span {
+          //   &:first-child {
+          //     color: tomato;
+          //     margin-right: 10px;
+          //     text-decoration: line-through;
+          //   }
+          // }
         }
       }
     }

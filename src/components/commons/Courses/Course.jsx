@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import RecommendedCourses from "./RecommendedCourses";
 import Session from "./CourseSession";
 import Modal from "react-modal";
@@ -27,6 +28,13 @@ const Course = (props) => {
 
   return (
     <>
+      <Helmet htmlAttributes>
+        <html lang="es" />
+        <title>Crea tu propia tienda online | Innodesign</title>
+        <meta name="description" content="Aprende a administrar productos, hacer ofertas, cupones,
+                  configurar pasarelas de pago y publicar tu tienda desde el
+                  primer día." />
+      </Helmet>
       <section className="course">
         <div className="course__banner ecommerce">
           <div className="container">
@@ -112,7 +120,7 @@ const Course = (props) => {
                 <ul className="price">
                   <li>
                     <span>S/100 soles</span>
-                    <span>S/50 soles</span>
+                    {/* <span>S/50 soles</span> */}
                   </li>
                   <li>Certificado Digital de participación</li>
                 </ul>
