@@ -31,9 +31,26 @@ const CourseRemote = (props) => {
       <Helmet htmlAttributes>
         <html lang="es" />
         <title>Herramientas digitales para trabajo remoto | Innodesign</title>
-        <meta name="description" content="Aprende las herramientas, técnicas y estrategias para que
+        <meta
+          name="description"
+          content="Aprende las herramientas, técnicas y estrategias para que
                   tú, tu empresa y tus clientes obtengan mejores resultados a
-                  través del teletrabajo." />
+                  través del teletrabajo."
+        />
+        <meta
+          property="og:title"
+          content="Herramientas digitales para trabajo remoto"
+        />
+        <meta
+          property="og:description"
+          content="Aprende las herramientas, técnicas y estrategias para que
+      tú, tu empresa y tus clientes obtengan mejores resultados a
+      través del teletrabajo."
+        />
+        <meta
+          property="og:image"
+          content="https://www.innodesign.academy/static/media/bg-remoto.4ffe69c8.jpg"
+        />
       </Helmet>
       <section className="course">
         <div className="course__banner remoto">

@@ -31,9 +31,26 @@ const Course = (props) => {
       <Helmet htmlAttributes>
         <html lang="es" />
         <title>Crea tu propia tienda online | Innodesign</title>
-        <meta name="description" content="Aprende a administrar productos, hacer ofertas, cupones,
+        <meta
+          name="description"
+          content="Aprende a administrar productos, hacer ofertas, cupones,
                   configurar pasarelas de pago y publicar tu tienda desde el
-                  primer día." />
+                  primer día."
+        />
+        <meta
+          property="og:title"
+          content="Crea tu propia tienda online | Innodesign"
+        />
+        <meta
+          property="og:description"
+          content="Aprende a administrar productos, hacer ofertas, cupones,
+      configurar pasarelas de pago y publicar tu tienda desde el
+      primer día."
+        />
+        <meta
+          property="og:image"
+          content="https://www.innodesign.academy/static/media/bg-ecommerce.59489356.jpg"
+        />
       </Helmet>
       <section className="course">
         <div className="course__banner ecommerce">

@@ -31,8 +31,25 @@ const CourseTeacher = (props) => {
       <Helmet htmlAttributes>
         <html lang="es" />
         <title>Herramientas digitales para docentes | Innodesign</title>
-        <meta name="description" content="Aprende a utilizar diversas herramientas digitales como Meet, Zoom, Kahoot, Drive y Jamboard para
-                  gestionar toda la actividad de tus alumnos de manera virtual." />
+        <meta
+          name="description"
+          content="Aprende a utilizar diversas herramientas digitales como Meet, Zoom, Kahoot, Drive y Jamboard para
+                  gestionar toda la actividad de tus alumnos de manera virtual."
+        />
+
+        <meta
+          property="og:title"
+          content="Herramientas digitales para docentes | Innodesign"
+        />
+        <meta
+          property="og:description"
+          content="Aprende a utilizar diversas herramientas digitales como Meet, Zoom, Kahoot, Drive y Jamboard para
+      gestionar toda la actividad de tus alumnos de manera virtual."
+        />
+        <meta
+          property="og:image"
+          content="https://www.innodesign.academy/static/media/bg-docentes.904475d6.jpg"
+        />
       </Helmet>
       <section className="course">
         <div className="course__banner docentes">
@@ -227,7 +244,10 @@ const CourseTeacher = (props) => {
                     <div className="instructor__info">
                       <h4>Deibbie Muñante</h4>
                       <p>
-                      MBA, Comunicador Social y docente universitario, especialista en herramientas digitales de vanguardia. Con conocimientos y experiencia de más de 10 años en marketing, dirección estratégica y finanzas.
+                        MBA, Comunicador Social y docente universitario,
+                        especialista en herramientas digitales de vanguardia.
+                        Con conocimientos y experiencia de más de 10 años en
+                        marketing, dirección estratégica y finanzas.
                       </p>
                     </div>
                   </div>
